@@ -1,34 +1,30 @@
 # konsultasiJadwalolahraga
 
-
+<!DOCTYPE html>
 <html lang="id">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <title>Estha AI Project</title>
+    <title>Estha AI - Konsultasi Jadwal</title>
     <style>
-        /* Menghilangkan margin bawaan browser dan memastikan layar penuh */
-        body, html {
+        * {
             margin: 0;
             padding: 0;
-            height: 100%;
-            width: 100%;
-            overflow: hidden;
-            background-color: #000; /* Warna latar belakang selagi loading */
+            box-sizing: border-box;
         }
-
-        /* Styling Iframe agar memenuhi seluruh layar tanpa celah */
-        .container {
-            position: absolute;
+        body, html {
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+            background-color: #000;
+        }
+        .wrapper {
+            position: fixed;
             top: 0;
             left: 0;
-            bottom: 0;
-            right: 0;
-            width: 100%;
-            height: 100%;
-            border: none;
+            width: 100vw;
+            height: 100vh;
         }
-
         iframe {
             width: 100%;
             height: 100%;
@@ -38,12 +34,11 @@
 </head>
 <body>
 
-    <div class="container">
+    <div class="wrapper">
         <iframe 
             src="https://studio.estha.ai/app/6943a56a9d9a8a600ad7375f" 
             allow="camera; microphone; clipboard-read; clipboard-write; geolocation; autoplay"
-            allowfullscreen
-            loading="lazy">
+            allowfullscreen>
         </iframe>
     </div>
 
